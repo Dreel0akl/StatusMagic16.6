@@ -32,7 +32,7 @@ struct StatusMagicApp: App {
         var maybeSupported = false
         var needsTrollStore = false
         if #available(iOS 16.3, *) {
-//            supported = false
+//            supported = true
         } else if #available(iOS 16.2, *) {
             if UserDefaults.standard.bool(forKey: "ShowUnsupported") {
                 maybeSupported = true
